@@ -2,6 +2,10 @@ require "test_helper"
 
 TEST_KEY = "suo_test_key".freeze
 
+require "dalli"
+require "dalli/cas/client"
+require "redis"
+
 module ClientTests
   def client(options = {})
     @client.class.new(options[:key] || TEST_KEY, options.merge(client: @client.client))

@@ -21,10 +21,10 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.5"
 
-  spec.add_dependency "dalli"
-  spec.add_dependency "redis"
   spec.add_dependency "msgpack"
 
+  spec.add_development_dependency "dalli"
+  spec.add_development_dependency "redis"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rubocop", "~> 0.49.0"
